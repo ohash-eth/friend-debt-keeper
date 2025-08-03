@@ -2,7 +2,6 @@ import { useState } from "react";
 import TopNavigation from "@/components/TopNavigation";
 import FilterSegmentedControl from "@/components/FilterSegmentedControl";
 import TransactionCard from "@/components/TransactionCard";
-import FloatingActionButton from "@/components/FloatingActionButton";
 import BottomTabBar from "@/components/BottomTabBar";
 
 // Mock data for demonstration
@@ -14,7 +13,8 @@ const mockTransactions = [
     type: "lent" as const,
     status: "unreturned" as const,
     dueDate: "2024-08-15",
-    description: "午餐费用"
+    description: "午餐费用",
+    notes: "和朋友一起吃的日式料理"
   },
   {
     id: "2", 
@@ -23,7 +23,8 @@ const mockTransactions = [
     type: "borrowed" as const,
     status: "overdue" as const,
     dueDate: "2024-07-28",
-    description: "电影票"
+    description: "电影票",
+    notes: "看的最新上映的科幻大片"
   },
   {
     id: "3",
@@ -32,7 +33,8 @@ const mockTransactions = [
     type: "lent" as const,
     status: "returned" as const,
     dueDate: "2024-08-01",
-    description: "紧急借款"
+    description: "紧急借款",
+    notes: "帮助朋友应急，已按时归还"
   },
   {
     id: "4",
@@ -41,7 +43,8 @@ const mockTransactions = [
     type: "borrowed" as const,
     status: "unreturned" as const,
     dueDate: "2024-08-20",
-    description: "购物垫付"
+    description: "购物垫付",
+    notes: "买生日礼物时朋友帮忙垫付"
   },
   {
     id: "5",
@@ -50,7 +53,8 @@ const mockTransactions = [
     type: "lent" as const,
     status: "overdue" as const,
     dueDate: "2024-07-30",
-    description: "房租分摊"
+    description: "房租分摊",
+    notes: "本月房租朋友还没付"
   }
 ];
 
@@ -85,7 +89,7 @@ const Index = () => {
             <p className="text-text-secondary">功能开发中...</p>
           </div>
         </div>
-        <BottomTabBar activeTab={activeTab} onTabChange={setActiveTab} />
+        <BottomTabBar activeTab={activeTab} onTabChange={setActiveTab} onAddTransaction={handleAddTransaction} />
       </div>
     );
   }
@@ -99,7 +103,7 @@ const Index = () => {
       <FilterSegmentedControl onFilterChange={setCurrentFilter} />
       
       {/* Transaction List */}
-      <div className="pb-32 pt-2">
+      <div className="pb-20 pt-2">
         {filteredTransactions.length > 0 ? (
           filteredTransactions.map((transaction) => (
             <TransactionCard key={transaction.id} transaction={transaction} />
@@ -122,11 +126,8 @@ const Index = () => {
         )}
       </div>
 
-      {/* Floating Action Button */}
-      <FloatingActionButton onClick={handleAddTransaction} />
-      
-      {/* Bottom Tab Bar */}
-      <BottomTabBar activeTab={activeTab} onTabChange={setActiveTab} />
+      {/* Bottom Tab Bar with integrated FAB */}
+      <BottomTabBar activeTab={activeTab} onTabChange={setActiveTab} onAddTransaction={handleAddTransaction} />
     </div>
   );
 };

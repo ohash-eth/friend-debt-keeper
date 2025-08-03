@@ -25,11 +25,11 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				
-				/* Friendship Ledger Brand Colors */
-				'app-blue': 'hsl(var(--primary-blue))',
-				'app-orange': 'hsl(var(--primary-orange))',
+				/* Updated Friendship Ledger Brand Colors */
+				'app-purple': 'hsl(var(--primary-purple))',
+				'app-green': 'hsl(var(--primary-green))',
 				'app-red': 'hsl(var(--primary-red))',
-				'app-yellow': 'hsl(var(--primary-yellow))',
+				'app-cream': 'hsl(var(--primary-cream))',
 				
 				/* Semantic Transaction Colors */
 				lent: 'hsl(var(--lent))',
@@ -46,6 +46,7 @@ export default {
 				/* Background Variations */
 				'bg-secondary': 'hsl(var(--background-secondary))',
 				'bg-tertiary': 'hsl(var(--background-tertiary))',
+				'bg-card-gradient': 'var(--background-card)',
 				
 				/* Status Colors */
 				'status-unreturned': 'hsl(var(--status-unreturned))',

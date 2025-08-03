@@ -17,17 +17,17 @@ All colors MUST be HSL.
     --card-foreground: 0 0% 6.7%;
     --card-shadow: 0 0% 0% / 0.08;
     
-    /* Friendship Ledger Brand Colors */
-    --primary-blue: 211 100% 50%;        /* #007AFF - actions, lent amounts */
-    --primary-orange: 28 100% 50%;       /* #FF9500 - borrowed amounts */
-    --primary-red: 356 100% 59%;         /* #FF3B30 - overdue amounts */
-    --primary-yellow: 38 100% 90%;       /* #FFE5CC - filter highlights */
+    /* Updated Friendship Ledger Brand Colors */
+    --primary-purple: 282 44% 47%;       /* #8E44AD - primary actions, active states */
+    --primary-green: 145 63% 42%;        /* #27AE60 - unreturned amounts */
+    --primary-red: 6 78% 57%;            /* #E74C3C - overdue amounts */
+    --primary-cream: 48 100% 96%;        /* #FFFEF7 - card backgrounds */
     
     /* Semantic Transaction Colors */
-    --lent: var(--primary-blue);
-    --borrowed: var(--primary-orange);
+    --lent: var(--primary-green);
+    --borrowed: var(--primary-green);
     --overdue: var(--primary-red);
-    --filter-highlight: var(--primary-yellow);
+    --filter-highlight: var(--primary-purple);
     
     /* Text Hierarchy */
     --text-primary: 0 0% 6.7%;           /* #111111 */
@@ -44,16 +44,16 @@ All colors MUST be HSL.
     --border-light: 0 0% 92.2%;          /* #EBEBEB */
     
     /* Status Indicators */
-    --status-unreturned: var(--primary-orange);
-    --status-returned: var(--primary-blue);
+    --status-unreturned: var(--primary-green);
+    --status-returned: var(--primary-purple);
     --status-overdue: var(--primary-red);
     
     /* Interactive Elements */
-    --primary: var(--primary-blue);
+    --primary: var(--primary-purple);
     --primary-foreground: 0 0% 100%;
     --secondary: var(--background-tertiary);
     --secondary-foreground: var(--text-disabled);
-    --accent: var(--primary-blue);
+    --accent: var(--primary-purple);
     --accent-foreground: 0 0% 100%;
     --destructive: var(--primary-red);
     --destructive-foreground: 0 0% 100%;
@@ -64,7 +64,7 @@ All colors MUST be HSL.
     --muted-foreground: var(--text-muted);
     --popover: var(--background);
     --popover-foreground: var(--text-primary);
-    --ring: var(--primary-blue);
+    --ring: var(--primary-purple);
     
     /* Border Radius System */
     --radius: 0.75rem;                   /* 12px - main cards */
