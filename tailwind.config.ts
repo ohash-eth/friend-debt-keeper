@@ -24,6 +24,34 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				
+				/* Friendship Ledger Brand Colors */
+				'app-blue': 'hsl(var(--primary-blue))',
+				'app-orange': 'hsl(var(--primary-orange))',
+				'app-red': 'hsl(var(--primary-red))',
+				'app-yellow': 'hsl(var(--primary-yellow))',
+				
+				/* Semantic Transaction Colors */
+				lent: 'hsl(var(--lent))',
+				borrowed: 'hsl(var(--borrowed))',
+				overdue: 'hsl(var(--overdue))',
+				'filter-highlight': 'hsl(var(--filter-highlight))',
+				
+				/* Text Hierarchy */
+				'text-primary': 'hsl(var(--text-primary))',
+				'text-secondary': 'hsl(var(--text-secondary))',
+				'text-muted': 'hsl(var(--text-muted))',
+				'text-disabled': 'hsl(var(--text-disabled))',
+				
+				/* Background Variations */
+				'bg-secondary': 'hsl(var(--background-secondary))',
+				'bg-tertiary': 'hsl(var(--background-tertiary))',
+				
+				/* Status Colors */
+				'status-unreturned': 'hsl(var(--status-unreturned))',
+				'status-returned': 'hsl(var(--status-returned))',
+				'status-overdue': 'hsl(var(--status-overdue))',
+				
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -66,7 +94,15 @@ export default {
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				sm: 'calc(var(--radius) - 4px)',
+				'app-sm': 'var(--radius-sm)',
+				'app-lg': 'var(--radius-lg)',
+				'app-full': 'var(--radius-full)'
+			},
+			boxShadow: {
+				'card': '0 2px 6px hsl(var(--card-shadow))',
+				'fab': '0 4px 8px rgba(0, 0, 0, 0.2)',
+				'elevated': '0 8px 24px rgba(0, 0, 0, 0.12)'
 			},
 			keyframes: {
 				'accordion-down': {

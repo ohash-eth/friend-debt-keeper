@@ -8,35 +8,69 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* App Background & Text */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 0 0% 6.7%;
+    
+    /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --card-foreground: 0 0% 6.7%;
+    --card-shadow: 0 0% 0% / 0.08;
+    
+    /* Friendship Ledger Brand Colors */
+    --primary-blue: 211 100% 50%;        /* #007AFF - actions, lent amounts */
+    --primary-orange: 28 100% 50%;       /* #FF9500 - borrowed amounts */
+    --primary-red: 356 100% 59%;         /* #FF3B30 - overdue amounts */
+    --primary-yellow: 38 100% 90%;       /* #FFE5CC - filter highlights */
+    
+    /* Semantic Transaction Colors */
+    --lent: var(--primary-blue);
+    --borrowed: var(--primary-orange);
+    --overdue: var(--primary-red);
+    --filter-highlight: var(--primary-yellow);
+    
+    /* Text Hierarchy */
+    --text-primary: 0 0% 6.7%;           /* #111111 */
+    --text-secondary: 0 0% 46.7%;        /* #777777 */
+    --text-muted: 0 0% 60%;              /* #999999 */
+    --text-disabled: 0 0% 40%;           /* #666666 */
+    
+    /* Background Variations */
+    --background-secondary: 220 14% 96%; /* #F5F6F8 */
+    --background-tertiary: 0 0% 94.1%;   /* #F0F0F0 */
+    
+    /* Borders & Dividers */
+    --border: 0 0% 87.8%;                /* #E0E0E0 */
+    --border-light: 0 0% 92.2%;          /* #EBEBEB */
+    
+    /* Status Indicators */
+    --status-unreturned: var(--primary-orange);
+    --status-returned: var(--primary-blue);
+    --status-overdue: var(--primary-red);
+    
+    /* Interactive Elements */
+    --primary: var(--primary-blue);
+    --primary-foreground: 0 0% 100%;
+    --secondary: var(--background-tertiary);
+    --secondary-foreground: var(--text-disabled);
+    --accent: var(--primary-blue);
+    --accent-foreground: 0 0% 100%;
+    --destructive: var(--primary-red);
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Form Elements */
+    --input: var(--border);
+    --muted: var(--background-secondary);
+    --muted-foreground: var(--text-muted);
+    --popover: var(--background);
+    --popover-foreground: var(--text-primary);
+    --ring: var(--primary-blue);
+    
+    /* Border Radius System */
+    --radius: 0.75rem;                   /* 12px - main cards */
+    --radius-sm: 0.5rem;                 /* 8px - small elements */
+    --radius-lg: 1.25rem;                /* 20px - segmented control */
+    --radius-full: 9999px;               /* Full circle - FAB */
 
     --sidebar-background: 0 0% 98%;
 
