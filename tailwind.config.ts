@@ -25,10 +25,11 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				
-				/* Updated Friendship Ledger Brand Colors */
+				/* Xianyu-Inspired Brand Colors */
+				'app-yellow': 'hsl(var(--primary-yellow))',
 				'app-purple': 'hsl(var(--primary-purple))',
-				'app-green': 'hsl(var(--primary-green))',
-				'app-red': 'hsl(var(--primary-red))',
+				'app-orange': 'hsl(var(--primary-orange))',
+				'app-blue': 'hsl(var(--primary-blue))',
 				'app-cream': 'hsl(var(--primary-cream))',
 				
 				/* Semantic Transaction Colors */

@@ -17,17 +17,19 @@ All colors MUST be HSL.
     --card-foreground: 0 0% 6.7%;
     --card-shadow: 0 0% 0% / 0.08;
     
-    /* Updated Friendship Ledger Brand Colors */
-    --primary-purple: 282 44% 47%;       /* #8E44AD - primary actions, active states */
-    --primary-green: 145 63% 42%;        /* #27AE60 - unreturned amounts */
+    /* Xianyu-Inspired Brand Colors */
+    --primary-yellow: 50 100% 63%;       /* #FFDA44 - main brand color */
+    --primary-purple: 282 44% 47%;       /* #8E44AD - accent color */
+    --primary-orange: 28 100% 53%;       /* #FF8800 - borrowed amounts */
+    --primary-blue: 211 100% 50%;        /* #007AFF - lent amounts */
     --primary-red: 6 78% 57%;            /* #E74C3C - overdue amounts */
     --primary-cream: 48 100% 96%;        /* #FFFEF7 - card backgrounds */
     
     /* Semantic Transaction Colors */
-    --lent: var(--primary-green);
-    --borrowed: var(--primary-green);
-    --overdue: var(--primary-red);
-    --filter-highlight: var(--primary-purple);
+    --lent: var(--primary-blue);         /* Blue for lent */
+    --borrowed: var(--primary-orange);   /* Orange for borrowed */
+    --overdue: var(--primary-red);       /* Red for overdue */
+    --filter-highlight: var(--primary-yellow); /* Yellow highlight */
     
     /* Text Hierarchy */
     --text-primary: 0 0% 6.7%;           /* #111111 */
@@ -44,13 +46,13 @@ All colors MUST be HSL.
     --border-light: 0 0% 92.2%;          /* #EBEBEB */
     
     /* Status Indicators */
-    --status-unreturned: var(--primary-green);
+    --status-unreturned: var(--primary-yellow);
     --status-returned: var(--primary-purple);
     --status-overdue: var(--primary-red);
     
     /* Interactive Elements */
-    --primary: var(--primary-purple);
-    --primary-foreground: 0 0% 100%;
+    --primary: var(--primary-yellow);    /* Yellow as primary */
+    --primary-foreground: var(--primary-purple); /* Purple text on yellow */
     --secondary: var(--background-tertiary);
     --secondary-foreground: var(--text-disabled);
     --accent: var(--primary-purple);

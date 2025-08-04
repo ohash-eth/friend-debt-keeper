@@ -28,7 +28,7 @@ const FilterSegmentedControl = ({ onFilterChange }: FilterSegmentedControlProps)
             className={`
               flex-1 h-10 rounded-app-lg font-medium text-sm transition-all duration-200 flex items-center justify-center gap-1
               ${activeFilter === filter.id 
-                ? 'bg-filter-highlight text-borrowed shadow-sm' 
+                ? 'bg-app-yellow text-app-purple shadow-sm font-bold' 
                 : 'text-text-disabled hover:text-text-primary'
               }
             `}

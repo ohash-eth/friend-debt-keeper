@@ -48,11 +48,12 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
 
   return (
     <div className="relative rounded-lg shadow-card mx-4 mb-3 hover:shadow-elevated transition-all duration-200 h-24 overflow-hidden">
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-app-cream to-pink-50"></div>
+      {/* Xianyu-Style Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-yellow-50 via-orange-50 to-pink-50"></div>
       
       {/* Decorative Element */}
-      <div className="absolute top-3 right-4 w-2 h-8 bg-primary opacity-20 rounded-full"></div>
+      <div className="absolute top-3 right-4 w-3 h-3 bg-app-yellow opacity-40 rounded-full"></div>
+      <div className="absolute top-6 right-6 w-2 h-6 bg-app-purple opacity-20 rounded-full"></div>
       
       {/* Content */}
       <div className="relative p-4 h-full flex flex-col justify-between">
@@ -61,7 +62,7 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
             {getStatusIcon()}
             <span className="text-base font-bold text-text-primary">{friendName}</span>
           </div>
-          <span className={`text-lg font-bold ${getAmountColor()}`}>
+          <span className={`text-xl font-bold ${getAmountColor()}`}>
             ¥{amount.toLocaleString()}
           </span>
         </div>
