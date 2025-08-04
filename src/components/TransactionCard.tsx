@@ -47,16 +47,18 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
   };
 
   return (
-    <div className="relative rounded-lg shadow-card mx-4 mb-3 hover:shadow-elevated transition-all duration-200 h-24 overflow-hidden">
-      {/* Xianyu-Style Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-yellow-50 via-orange-50 to-pink-50"></div>
+    <div className="relative rounded-lg shadow-tech-card mx-4 mb-3 hover:shadow-tech-elevated hover:-translate-y-0.5 transition-all duration-300 ease-out min-h-24 overflow-hidden active:scale-[0.98]">
+      {/* Tech-Inspired Background with Mesh Pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-tech-primary via-tech-secondary to-tech-accent"></div>
+      <div className="absolute inset-0 opacity-30 bg-tech-mesh"></div>
       
-      {/* Decorative Element */}
-      <div className="absolute top-3 right-4 w-3 h-3 bg-app-yellow opacity-40 rounded-full"></div>
-      <div className="absolute top-6 right-6 w-2 h-6 bg-app-purple opacity-20 rounded-full"></div>
+      {/* Decorative Tech Elements */}
+      <div className="absolute top-3 right-4 w-3 h-3 bg-app-yellow opacity-60 rounded-full shadow-glow"></div>
+      <div className="absolute top-6 right-6 w-2 h-6 bg-app-purple opacity-30 rounded-full"></div>
+      <div className="absolute top-2 right-8 w-1 h-3 bg-tech-accent opacity-40 rounded-full"></div>
       
       {/* Content */}
-      <div className="relative p-4 h-full flex flex-col justify-between">
+      <div className="relative p-4 h-full flex flex-col gap-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             {getStatusIcon()}
@@ -78,7 +80,7 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
         </div>
         
         {notes && (
-          <div className="text-sm text-text-muted mt-1 truncate">
+          <div className="text-sm text-text-muted leading-relaxed">
             备注：{notes}
           </div>
         )}

@@ -49,6 +49,12 @@ export default {
 				'bg-tertiary': 'hsl(var(--background-tertiary))',
 				'bg-card-gradient': 'var(--background-card)',
 				
+				/* Tech-Inspired Colors */
+				'tech-primary': 'hsl(var(--tech-primary))',
+				'tech-secondary': 'hsl(var(--tech-secondary))',
+				'tech-accent': 'hsl(var(--tech-accent))',
+				'tech-mesh': 'var(--tech-mesh-pattern)',
+				
 				/* Status Colors */
 				'status-unreturned': 'hsl(var(--status-unreturned))',
 				'status-returned': 'hsl(var(--status-returned))',
@@ -104,7 +110,10 @@ export default {
 			boxShadow: {
 				'card': '0 2px 6px hsl(var(--card-shadow))',
 				'fab': '0 4px 8px rgba(0, 0, 0, 0.2)',
-				'elevated': '0 8px 24px rgba(0, 0, 0, 0.12)'
+				'elevated': '0 8px 24px rgba(0, 0, 0, 0.12)',
+				'tech-card': '0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.05)',
+				'tech-elevated': '0 8px 16px rgba(0, 0, 0, 0.15), 0 16px 32px rgba(0, 0, 0, 0.08)',
+				'glow': '0 0 20px rgba(255, 218, 68, 0.4)'
 			},
 			keyframes: {
 				'accordion-down': {
