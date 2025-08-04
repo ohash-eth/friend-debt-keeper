@@ -65,7 +65,7 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
             {getStatusIcon()}
             <span className="text-base font-bold text-text-primary">{friendName}</span>
           </div>
-          <span className={`text-xl font-bold ${getAmountColor()}`}>
+          <span className={`text-xl font-bold bg-transparent ${getAmountColor()}`}>
             ¥{amount.toLocaleString()}
           </span>
         </div>
