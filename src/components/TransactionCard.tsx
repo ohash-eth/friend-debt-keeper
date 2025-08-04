@@ -47,10 +47,11 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
   };
 
   return (
-    <div className="relative rounded-lg shadow-tech-card mx-4 mb-3 hover:shadow-tech-elevated hover:-translate-y-0.5 transition-all duration-300 ease-out min-h-24 overflow-hidden active:scale-[0.98]">
-      {/* Tech-Inspired Background with Mesh Pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-tech-primary via-tech-secondary to-tech-accent"></div>
-      <div className="absolute inset-0 opacity-30 bg-tech-mesh"></div>
+    <div className="relative rounded-lg shadow-tech-card mx-4 mb-3 hover:shadow-tech-floating hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 ease-out min-h-24 overflow-hidden active:scale-[0.98] cursor-pointer">
+      {/* Enhanced Tech-Inspired Background with Subtle Color */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-50/80 via-blue-50/60 to-yellow-50/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-tech-primary via-tech-secondary to-tech-accent opacity-60"></div>
+      <div className="absolute inset-0 opacity-20 bg-tech-mesh backdrop-blur-[0.5px]"></div>
       
       {/* Decorative Tech Elements */}
       <div className="absolute top-3 right-4 w-3 h-3 bg-app-yellow opacity-60 rounded-full shadow-glow"></div>
