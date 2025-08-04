@@ -28,11 +28,11 @@ const BottomTabBar = ({ activeTab = "ledger", onTabChange, onAddTransaction }: B
           <span className="text-xs font-medium">{tabs[0].label}</span>
         </button>
 
-        {/* Enhanced Center FAB */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-3/4">
+        {/* Static Center FAB */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <button
             onClick={onAddTransaction}
-            className="w-16 h-16 bg-app-yellow text-app-purple rounded-full shadow-fab-floating flex items-center justify-center hover:scale-110 hover:-translate-y-1 active:scale-95 transition-all duration-300 ease-out animate-pulse hover:animate-none"
+            className="w-16 h-16 bg-app-yellow text-app-purple rounded-full shadow-fab-floating flex items-center justify-center hover:scale-110 hover:-translate-y-1 active:scale-95 transition-all duration-300 ease-out"
           >
             <Plus size={28} strokeWidth={2.5} />
           </button>
